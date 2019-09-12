@@ -17,13 +17,6 @@ def index():
         img_link=image_link(config["image_path"])
         return render_template('index.html', **locals())
 
-#@app.route('/json',methods=['POST'])
-#def processjson():
-#    #data=request.get_json()
-#    #website=data['website']
-#    #img_view=data['image_view']
-#    return jsonify(request.json)
-
 
 if __name__ == '__main__':
     with open('./config/web.json') as json_file:

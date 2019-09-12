@@ -14,7 +14,7 @@
         <entry file="file://$PROJECT_DIR$/flask-scrape.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
-              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -53,6 +53,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -70,9 +73,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="55" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-139" />
+    <option name="y" value="52" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
@@ -81,32 +84,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="webscrapping_using_flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webscrapping_using_flask" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webscrapping_using_flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webscrapping_using_flask" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webscrapping_using_flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webscrapping_using_flask" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webscrapping_using_flask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,11 +173,12 @@
       <workItem from="1568230029136" duration="4941000" />
       <workItem from="1568235706806" duration="145000" />
       <workItem from="1568280499602" duration="2533000" />
+      <workItem from="1568285621681" duration="97000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59252000" />
+    <option name="totallyTimeSpent" value="59349000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -210,9 +190,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="16" width="1400" height="784" extended-state="0" />
+    <frame x="-111" y="42" width="1400" height="784" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33681074" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34202683" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -286,7 +266,7 @@
     <entry file="file://$PROJECT_DIR$/flask-scrape.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
         </state>
       </provider>
     </entry>
