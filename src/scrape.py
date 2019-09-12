@@ -7,7 +7,6 @@ from tqdm import tqdm
 import time
 from os import listdir
 from os.path import isfile, join
-import re
 from functools import reduce
 from operator import add
 import re
@@ -16,7 +15,7 @@ def save_link(soup):
     image_link = []
     for i in tqdm(range(0, len(soup.find_all('img'))), desc="first"):
         if len(soup.find_all('img')[i]['src'])>5:
-            if re.search('http',soup.find_all('img')[i]['src'].lower()):
+            if re.search('http',soup.find_all('img')[i]['src'].lower()) and re.search('jpg',soup.find_all('img')[i]['src'].lower()):
                 image_link.append(soup.find_all('img')[i]['src'])
             else:
                 continue
