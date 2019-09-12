@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webscraper in Pythonk</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/columns.css') }}">
+</head>
+<body>
+    <div id="image_info" class="row">
+        {% for image in img_link %}
+            <div class="column" id="images_col">
+                <a target="_blank" href="{{ image }}">
+                    <img src="{{ image }}"  alt="image not found" style="border-radius: 80%; height: 200px; width: 200px">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+        <script type="text/javascript" src="{{ url_for('static', filename='background_color.js') }}"></script>
+    <div id="myModal" class="modal">
+      <span class="close">×</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+div.column {
+  margin: 5px;
+  border: 0.5px solid #ccc;
+  float: left;
+  width: auto;
+  padding: 44px;
+}
+
+div.column:hover {
+  border: 1px solid #777;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: grayscale(100%);
+   filter: grayscale(100%);
+  box-shadow: 2px 4px 10px 4px red;
+}
+
+div.column img {
+  width: 100%;
+  height: auto;
+}
