@@ -1,6 +1,7 @@
 {
-  "website":["https://www.pexels.com/","https://www.canva.com/photos/search/nature/?continuation=200&limit=100","https://www.canva.com/photos/search/nature/?continuation=100&limit=100"],
+    "website":["https://www.pexels.com/","https://www.canva.com/photos/search/nature/?continuation=200&limit=100","https://www.canva.com/photos/search/nature/?continuation=100&limit=100"],
   "save_img": "False",
   "show_web": "True",
-  "image_path": "static/img"
+  "image_path": "static/img",
+  "user_input": "True"
 }

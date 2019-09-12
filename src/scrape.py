@@ -10,12 +10,16 @@ from os.path import isfile, join
 import re
 from functools import reduce
 from operator import add
+import re
 
 def save_link(soup):
     image_link = []
     for i in tqdm(range(0, len(soup.find_all('img'))), desc="first"):
         if len(soup.find_all('img')[i]['src'])>5:
-            image_link.append(soup.find_all('img')[i]['src'])
+            if re.search('http',soup.find_all('img')[i]['src'].lower()):
+                image_link.append(soup.find_all('img')[i]['src'])
+            else:
+                continue
         else:
             continue
     return image_link
@@ -39,17 +43,18 @@ def anime(webpage):
 
 def save_img(image_link):
     for j in tqdm(range(0,len(image_link)),desc="second"):
-        try:
-            req = Request(image_link[j], headers={'User-Agent': 'Mozilla/5.0'})
-            web_byte = urlopen(req).read()
-            image = Image.open(io.BytesIO(web_byte))
-            filename=image_link[j].split('/')[-1].split('.')[0]
-            if "%" in filename:
-                filename=re.sub('%','-',filename)
-            image.save("./static/img/" + filename + ".jpg")
-            time.sleep(5)
-        except:
-            continue
+        if re.search('http',image_link[j].lower()):
+            try:
+                req = Request(image_link[j], headers={'User-Agent': 'Mozilla/5.0'})
+                web_byte = urlopen(req).read()
+                image = Image.open(io.BytesIO(web_byte))
+                filename=image_link[j].split('/')[-1].split('.')[0]
+                if "%" in filename:
+                    filename=re.sub('%','-',filename)
+                image.save("./static/img/" + filename + ".jpg")
+                time.sleep(5)
+            except:
+                continue
 
 
 def image_link(mypath):
